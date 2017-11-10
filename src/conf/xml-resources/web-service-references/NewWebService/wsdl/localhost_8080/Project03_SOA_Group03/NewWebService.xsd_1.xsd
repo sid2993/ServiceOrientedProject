@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://WebServices/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WebServices/">
+
+<xs:element name="get_Customer" type="tns:get_Customer"/>
+
+<xs:element name="get_CustomerResponse" type="tns:get_CustomerResponse"/>
+
+<xs:element name="get_Customer_1" type="tns:get_Customer_1"/>
+
+<xs:element name="get_Customer_1Response" type="tns:get_Customer_1Response"/>
+
+<xs:element name="get_comment" type="tns:get_comment"/>
+
+<xs:element name="get_commentResponse" type="tns:get_commentResponse"/>
+
+<xs:element name="get_comment_1" type="tns:get_comment_1"/>
+
+<xs:element name="get_comment_1Response" type="tns:get_comment_1Response"/>
+
+<xs:element name="get_employee" type="tns:get_employee"/>
+
+<xs:element name="get_employeeResponse" type="tns:get_employeeResponse"/>
+
+<xs:element name="get_employees" type="tns:get_employees"/>
+
+<xs:element name="get_employeesResponse" type="tns:get_employeesResponse"/>
+
+<xs:element name="get_expenses" type="tns:get_expenses"/>
+
+<xs:element name="get_expensesResponse" type="tns:get_expensesResponse"/>
+
+<xs:element name="get_expenses_1" type="tns:get_expenses_1"/>
+
+<xs:element name="get_expenses_1Response" type="tns:get_expenses_1Response"/>
+
+<xs:element name="get_invoices" type="tns:get_invoices"/>
+
+<xs:element name="get_invoicesResponse" type="tns:get_invoicesResponse"/>
+
+<xs:element name="get_invoices_1" type="tns:get_invoices_1"/>
+
+<xs:element name="get_invoices_1Response" type="tns:get_invoices_1Response"/>
+
+<xs:element name="get_location" type="tns:get_location"/>
+
+<xs:element name="get_locationResponse" type="tns:get_locationResponse"/>
+
+<xs:element name="get_location_1" type="tns:get_location_1"/>
+
+<xs:element name="get_location_1Response" type="tns:get_location_1Response"/>
+
+<xs:element name="get_orders" type="tns:get_orders"/>
+
+<xs:element name="get_ordersResponse" type="tns:get_ordersResponse"/>
+
+<xs:element name="get_orders_1" type="tns:get_orders_1"/>
+
+<xs:element name="get_orders_1Response" type="tns:get_orders_1Response"/>
+
+<xs:element name="get_pricing" type="tns:get_pricing"/>
+
+<xs:element name="get_pricingResponse" type="tns:get_pricingResponse"/>
+
+<xs:element name="get_pricing_1" type="tns:get_pricing_1"/>
+
+<xs:element name="get_pricing_1Response" type="tns:get_pricing_1Response"/>
+
+<xs:element name="get_truck" type="tns:get_truck"/>
+
+<xs:element name="get_truckResponse" type="tns:get_truckResponse"/>
+
+<xs:element name="get_truck_1" type="tns:get_truck_1"/>
+
+<xs:element name="get_truck_1Response" type="tns:get_truck_1Response"/>
+
+<xs:element name="get_vehicle" type="tns:get_vehicle"/>
+
+<xs:element name="get_vehicleResponse" type="tns:get_vehicleResponse"/>
+
+<xs:element name="get_vehicle_1" type="tns:get_vehicle_1"/>
+
+<xs:element name="get_vehicle_1Response" type="tns:get_vehicle_1Response"/>
+
+<xs:complexType name="get_comment_1">
+<xs:sequence>
+<xs:element name="Cid" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_comment_1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:commentModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="commentModel">
+<xs:sequence>
+<xs:element name="commentID" type="xs:string" minOccurs="0"/>
+<xs:element name="comment_time" type="xs:string" minOccurs="0"/>
+<xs:element name="comment_type" type="xs:string" minOccurs="0"/>
+<xs:element name="comments" type="xs:string" minOccurs="0"/>
+<xs:element name="customerID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_comment">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="get_commentResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:commentModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_expenses">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="get_expensesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:expensesModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="expensesModel">
+<xs:sequence>
+<xs:element name="advance_amount" type="xs:string" minOccurs="0"/>
+<xs:element name="amount_spend" type="xs:string" minOccurs="0"/>
+<xs:element name="date_purchased" type="xs:string" minOccurs="0"/>
+<xs:element name="date_submitted" type="xs:string" minOccurs="0"/>
+<xs:element name="description" type="xs:string" minOccurs="0"/>
+<xs:element name="employeeID" type="xs:string" minOccurs="0"/>
+<xs:element name="expenseID" type="xs:string" minOccurs="0"/>
+<xs:element name="expense_type" type="xs:string" minOccurs="0"/>
+<xs:element name="payment_method" type="xs:string" minOccurs="0"/>
+<xs:element name="purpose_of_expense" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_expenses_1">
+<xs:sequence>
+<xs:element name="Cid" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_expenses_1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:expensesModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_orders">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="get_ordersResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:orderModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="orderModel">
+<xs:sequence>
+<xs:element name="customerID" type="xs:string" minOccurs="0"/>
+<xs:element name="employeeID" type="xs:string" minOccurs="0"/>
+<xs:element name="is_special" type="xs:string" minOccurs="0"/>
+<xs:element name="orderID" type="xs:string" minOccurs="0"/>
+<xs:element name="order_date" type="xs:string" minOccurs="0"/>
+<xs:element name="order_total_amount" type="xs:string" minOccurs="0"/>
+<xs:element name="purchase_order_number" type="xs:string" minOccurs="0"/>
+<xs:element name="truckID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_orders_1">
+<xs:sequence>
+<xs:element name="Cid" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_orders_1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:orderModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_location">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="get_locationResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:locationModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="locationModel">
+<xs:sequence>
+<xs:element name="address_street1" type="xs:string" minOccurs="0"/>
+<xs:element name="address_street2" type="xs:string" minOccurs="0"/>
+<xs:element name="city" type="xs:string" minOccurs="0"/>
+<xs:element name="customerID" type="xs:string" minOccurs="0"/>
+<xs:element name="is_auction" type="xs:string" minOccurs="0"/>
+<xs:element name="locationID" type="xs:string" minOccurs="0"/>
+<xs:element name="location_code" type="xs:string" minOccurs="0"/>
+<xs:element name="location_contact_name" type="xs:string" minOccurs="0"/>
+<xs:element name="location_email" type="xs:string" minOccurs="0"/>
+<xs:element name="location_fax_number" type="xs:string" minOccurs="0"/>
+<xs:element name="location_name" type="xs:string" minOccurs="0"/>
+<xs:element name="location_phone" type="xs:string" minOccurs="0"/>
+<xs:element name="postal_code" type="xs:string" minOccurs="0"/>
+<xs:element name="region" type="xs:string" minOccurs="0"/>
+<xs:element name="state" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_location_1">
+<xs:sequence>
+<xs:element name="Cid" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_location_1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:locationModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_vehicle">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="get_vehicleResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:vehicleModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="vehicleModel">
+<xs:sequence>
+<xs:element name="color" type="xs:string" minOccurs="0"/>
+<xs:element name="make" type="xs:string" minOccurs="0"/>
+<xs:element name="model" type="xs:string" minOccurs="0"/>
+<xs:element name="orderID" type="xs:string" minOccurs="0"/>
+<xs:element name="VIN" type="xs:string" minOccurs="0"/>
+<xs:element name="year" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_vehicle_1">
+<xs:sequence>
+<xs:element name="Cid" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_vehicle_1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:vehicleModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_truck_1">
+<xs:sequence>
+<xs:element name="Cid" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_truck_1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:trucksModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="trucksModel">
+<xs:sequence>
+<xs:element name="color" type="xs:string" minOccurs="0"/>
+<xs:element name="employeeID" type="xs:string" minOccurs="0"/>
+<xs:element name="license_plate_no" type="xs:string" minOccurs="0"/>
+<xs:element name="make" type="xs:string" minOccurs="0"/>
+<xs:element name="model" type="xs:string" minOccurs="0"/>
+<xs:element name="truckID" type="xs:string" minOccurs="0"/>
+<xs:element name="VIN" type="xs:string" minOccurs="0"/>
+<xs:element name="year" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_truck">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="get_truckResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:trucksModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_employee">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="get_employeeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:employeesModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="employeesModel">
+<xs:sequence>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+<xs:element name="birth_date" type="xs:string" minOccurs="0"/>
+<xs:element name="cell_phone" type="xs:string" minOccurs="0"/>
+<xs:element name="city" type="xs:string" minOccurs="0"/>
+<xs:element name="date_hired" type="xs:string" minOccurs="0"/>
+<xs:element name="driver_license_number" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="employeeID" type="xs:string" minOccurs="0"/>
+<xs:element name="extension" type="xs:string" minOccurs="0"/>
+<xs:element name="first_name" type="xs:string" minOccurs="0"/>
+<xs:element name="home_phone" type="xs:string" minOccurs="0"/>
+<xs:element name="jobtitle" type="xs:string" minOccurs="0"/>
+<xs:element name="last_name" type="xs:string" minOccurs="0"/>
+<xs:element name="notes" type="xs:string" minOccurs="0"/>
+<xs:element name="postal_code" type="xs:string" minOccurs="0"/>
+<xs:element name="salary" type="xs:string" minOccurs="0"/>
+<xs:element name="ssn" type="xs:string" minOccurs="0"/>
+<xs:element name="state" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_pricing_1">
+<xs:sequence>
+<xs:element name="Cid" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_pricing_1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:pricingModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pricingModel">
+<xs:sequence>
+<xs:element name="customerID" type="xs:string" minOccurs="0"/>
+<xs:element name="location_code_from" type="xs:string" minOccurs="0"/>
+<xs:element name="location_code_to" type="xs:string" minOccurs="0"/>
+<xs:element name="location_id_from" type="xs:string" minOccurs="0"/>
+<xs:element name="location_id_to" type="xs:string" minOccurs="0"/>
+<xs:element name="location_name_from" type="xs:string" minOccurs="0"/>
+<xs:element name="location_name_to" type="xs:string" minOccurs="0"/>
+<xs:element name="price" type="xs:string" minOccurs="0"/>
+<xs:element name="priceID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_pricing">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="get_pricingResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pricingModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_employees">
+<xs:sequence>
+<xs:element name="Cid" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_employeesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:employeesModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_Customer_1">
+<xs:sequence>
+<xs:element name="Cid" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_Customer_1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:customerModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="customerModel">
+<xs:sequence>
+<xs:element name="alternate_contact_name" type="xs:string" minOccurs="0"/>
+<xs:element name="billing_address" type="xs:string" minOccurs="0"/>
+<xs:element name="business_name" type="xs:string" minOccurs="0"/>
+<xs:element name="cell_number" type="xs:string" minOccurs="0"/>
+<xs:element name="city" type="xs:string" minOccurs="0"/>
+<xs:element name="company_name" type="xs:string" minOccurs="0"/>
+<xs:element name="contact_name" type="xs:string" minOccurs="0"/>
+<xs:element name="country" type="xs:string" minOccurs="0"/>
+<xs:element name="customerID" type="xs:string" minOccurs="0"/>
+<xs:element name="customer_title" type="xs:string" minOccurs="0"/>
+<xs:element name="customer_type" type="xs:string" minOccurs="0"/>
+<xs:element name="date_entered" type="xs:string" minOccurs="0"/>
+<xs:element name="email_address" type="xs:string" minOccurs="0"/>
+<xs:element name="fax_number" type="xs:string" minOccurs="0"/>
+<xs:element name="other_number" type="xs:string" minOccurs="0"/>
+<xs:element name="phone_no" type="xs:string" minOccurs="0"/>
+<xs:element name="postal_code" type="xs:string" minOccurs="0"/>
+<xs:element name="state" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_Customer">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="get_CustomerResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:customerModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_invoices_1">
+<xs:sequence>
+<xs:element name="Cid" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_invoices_1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:invoicesModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="invoicesModel">
+<xs:sequence>
+<xs:element name="invoiceID" type="xs:string" minOccurs="0"/>
+<xs:element name="orderID" type="xs:string" minOccurs="0"/>
+<xs:element name="paymentID" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_invoices">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="get_invoicesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:invoicesModel" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
